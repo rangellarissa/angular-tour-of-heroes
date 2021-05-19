@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     SidenavComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
