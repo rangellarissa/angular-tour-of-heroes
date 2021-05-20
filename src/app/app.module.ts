@@ -1,3 +1,5 @@
+import { HeroService } from './services/hero.service';
+import { SideNavService } from './services/sidenav.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -29,7 +31,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSidenavModule,
     MatIconModule,
   ],
-  providers: [],
+  exports: [
+    HeroesComponent,
+    SidenavComponent,
+    HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent
+  ],
+  providers: [SideNavService, HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
