@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {PortalModule} from '@angular/cdk/portal';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CdkPortalOverviewExampleComponent } from './cdk-portal-overview-example/cdk-portal-overview-example.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidenavComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    CdkPortalOverviewExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatIconModule,
+    PortalModule,
   ],
   exports: [
     HeroesComponent,
